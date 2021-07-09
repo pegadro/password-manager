@@ -6,7 +6,7 @@ We only use a single package that is [Click](https://click.palletsprojects.com/e
 
 Once you clone the project, to install the package you need to run the command:
 ```bash
-pip install -r requirements.py
+pip install -r requirements.txt
 ```
 
 ## Files needed
