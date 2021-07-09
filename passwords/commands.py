@@ -81,8 +81,8 @@ def _update_password_flow(password):
     click.echo('Leave empty if you dont want to modify the value')
     
     password.app = click.prompt('New app/web/service', type=str, default=password.app)
-    password.user = click.prompt('New user/email', type=str, hide_input=True, confirmation_option=True, default=password.user)
-    password.password = click.password_option('New password', type=str, default=password.password)
+    password.user = click.prompt('New user/email', type=str, default=password.user)
+    password.password = click.prompt('New password', type=str,  hide_input=True, confirmation_prompt=True ,default=password.password)
     password.notes = click.prompt('New notes', type=str, default=password.notes)
 
     return password
